@@ -121,3 +121,121 @@ This helps hospitals:
 	•	Prepare resources in advance
 	•	Avoid emergency shortages
 	•	Improve patient care
+
+	📂 Understanding the Project Intent & High-Level Flow
+
+Project Intent
+
+The repository is focused on solving a data-driven problem using a structured data science workflow. The main goal of the project is to analyze a dataset and extract meaningful insights that can support decision-making.
+
+The project attempts to:
+	•	Understand patterns in the dataset
+	•	Perform exploratory analysis
+	•	Generate insights or predictions
+
+The core idea is not just analysis, but to move from raw data to actionable insights.
+
+⸻
+
+High-Level Data Science Workflow
+
+The repository follows a typical data science lifecycle:
+	1.	Problem Understanding
+The project starts by defining the goal or question to be solved.
+	2.	Data Collection & Loading
+Data is collected or imported from a source and prepared for analysis.
+	3.	Data Cleaning & Preprocessing
+Missing values, inconsistencies, and formatting issues are handled.
+	4.	Exploratory Data Analysis (EDA)
+The dataset is explored using visualizations and summary statistics to identify patterns.
+	5.	Modeling / Analysis
+The project may include predictive modeling or deeper analysis.
+	6.	Insights & Results
+Final conclusions are drawn based on the analysis.
+
+⸻
+
+How Repository Structure Reflects the Lifecycle
+
+The repository structure is organized in a way that reflects different stages of the data science process:
+	•	Early stages like data collection and cleaning are separated from
+	•	Middle stages like exploration and analysis, which are often done in notebooks
+	•	Final outputs like results or visualizations are stored separately
+
+This separation helps maintain clarity and prevents confusion between raw work and final outputs.
+
+⸻
+
+📁 Repository Structure & File Roles
+
+Major Folders
+	•	data/
+Contains raw and processed datasets.
+This is the foundation of the project and should not be modified carelessly.
+	•	notebooks/
+Used for exploratory data analysis (EDA).
+These files contain experiments, visualizations, and initial findings.
+	•	scripts/ or src/
+Contains structured and reusable code for data processing or modeling.
+This is more stable compared to notebooks.
+	•	outputs/ or results/
+Stores final visualizations, reports, or model outputs.
+
+⸻
+
+Exploratory vs Finalized Work
+	•	Exploratory Work (Notebooks)
+	•	Used for experimentation
+	•	May contain unstructured or trial-and-error code
+	•	Helps in understanding the data
+	•	Finalized Work (Scripts / Outputs)
+	•	Clean and reusable code
+	•	Represents the final version of analysis
+	•	Used for reproducibility
+
+⸻
+
+Where to Be Careful
+
+As a contributor, caution is needed when:
+	•	Modifying files in the data/ folder (to avoid corrupting raw data)
+	•	Changing core logic in scripts/ without understanding dependencies
+	•	Overwriting existing outputs without verification
+
+It is safer to:
+	•	Create new notebooks for experimentation
+	•	Avoid editing original datasets
+	•	Test changes before merging
+
+⸻
+
+⚠️ Assumptions, Gaps, and Open Questions
+
+Assumptions
+	•	The dataset is assumed to be clean or manageable after preprocessing
+	•	The problem statement is assumed to be correctly defined
+	•	The data is assumed to be representative of real-world scenarios
+
+⸻
+
+Gaps & Missing Elements
+	•	The README may not fully explain:
+	•	The exact problem statement
+	•	The meaning of each dataset column
+	•	The reasoning behind certain analysis steps
+	•	Lack of clear documentation can make it difficult for new contributors to understand:
+	•	Why certain decisions were made
+	•	How results were derived
+
+⸻
+
+Suggested Improvement
+
+One major improvement would be:
+
+👉 Adding a clear data dictionary and step-by-step workflow explanation
+
+This would help:
+	•	New contributors understand the dataset quickly
+	•	Reduce confusion about analysis steps
+	•	Improve reproducibility
