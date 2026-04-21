@@ -244,5 +244,73 @@ This would help:
 
 ---
 
+# ⚙️ Local Environment Setup
 
+## 🖥️ Operating System
+macOS (Apple Silicon)
 
+## 🐍 Python Installation
+Python was already installed and verified using the terminal.
+
+Verification Command:
+python3 --version
+
+Output:
+Python 3.x.x
+
+This confirms that Python is installed and accessible from the command line.
+
+## 📦 Miniconda Installation
+Miniconda (lightweight version of Anaconda) was installed to manage environments and packages for Data Science development.
+
+Verification Command:
+conda --version
+
+Output:
+conda x.x.x
+
+This confirms that Conda is installed and working correctly.
+
+## 🧪 Environment Setup
+A new Conda environment was created for Data Science work.
+
+Create Environment:
+conda create -n ds_env python=3.10
+
+Activate Environment:
+conda activate ds_env
+
+## ✅ Environment Validation
+Python was tested inside the environment to ensure everything is working correctly.
+
+Run Python:
+python3
+
+Test Command:
+print("Hello, Data Science")
+
+Output:
+Hello, Data Science
+
+Additional Verification:
+conda info
+
+This confirms that the environment is active and functioning properly.
+
+## 📸 Proof of Setup
+The following were verified:
+- Python version is accessible via terminal  
+- Conda is installed and working  
+- Environment is successfully created and activated  
+- Python runs without errors  
+
+(Screenshots of terminal outputs can be added here as proof)
+
+## ✅ Conclusion
+The system is successfully configured with:
+- Python installed and verified  
+- Miniconda installed and accessible  
+- Conda environment created and activated  
+- Terminal-based execution verified  
+
+This setup is ready for Data Science, Machine Learning, and application development tasks throughout the sprint.
