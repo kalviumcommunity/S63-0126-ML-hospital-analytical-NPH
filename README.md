@@ -244,73 +244,25 @@ This would help:
 
 ---
 
-# ⚙️ Local Environment Setup
+# ⚙️ Environment Verification
+
+This repository contains verification proof that the local Data Science environment is fully functional and ready.
 
 ## 🖥️ Operating System
-macOS (Apple Silicon)
+Windows
 
-## 🐍 Python Installation
-Python was already installed and verified using the terminal.
+## ✅ Verification Proof
 
-Verification Command:
-python3 --version
+The `Environment_Verification.ipynb` notebook in this repository serves as the primary verification artifact. It demonstrates:
+1. Python version check executed successfully
+2. Conda version check and environment activation
+3. Jupyter Notebook launching correctly
+4. A Python cell running successfully inside Jupyter
 
-Output:
-Python 3.x.x
+### Terminal Verification Summary
 
-This confirms that Python is installed and accessible from the command line.
+- **Python**: Installed and accessible from the command line (`python --version`).
+- **Conda**: Installed and working correctly (`conda --version`). Environments can be activated successfully.
+- **Jupyter**: Available within the Conda environment and capable of executing Python kernels.
 
-## 📦 Miniconda Installation
-Miniconda (lightweight version of Anaconda) was installed to manage environments and packages for Data Science development.
-
-Verification Command:
-conda --version
-
-Output:
-conda x.x.x
-
-This confirms that Conda is installed and working correctly.
-
-## 🧪 Environment Setup
-A new Conda environment was created for Data Science work.
-
-Create Environment:
-conda create -n ds_env python=3.10
-
-Activate Environment:
-conda activate ds_env
-
-## ✅ Environment Validation
-Python was tested inside the environment to ensure everything is working correctly.
-
-Run Python:
-python3
-
-Test Command:
-print("Hello, Data Science")
-
-Output:
-Hello, Data Science
-
-Additional Verification:
-conda info
-
-This confirms that the environment is active and functioning properly.
-
-## 📸 Proof of Setup
-The following were verified:
-- Python version is accessible via terminal  
-- Conda is installed and working  
-- Environment is successfully created and activated  
-- Python runs without errors  
-
-(Screenshots of terminal outputs can be added here as proof)
-
-## ✅ Conclusion
-The system is successfully configured with:
-- Python installed and verified  
-- Miniconda installed and accessible  
-- Conda environment created and activated  
-- Terminal-based execution verified  
-
-This setup is ready for Data Science, Machine Learning, and application development tasks throughout the sprint.
+This setup ensures a consistent and stable environment for all subsequent Data Science and Machine Learning sprints.
